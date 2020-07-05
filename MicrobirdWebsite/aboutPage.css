@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row1-bg{
+    background-image: url("https://kitchensinkstudios.com/wp-content/uploads/2019/09/KitchenSink-About.jpg");
+    justify-content: center;
+}
+
+.headText1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    width: 100%;
+    padding-top: 115px;
+}
+
+.bigHeadText{
+    font-size: 50px;
+    margin: 0;
+    display: table;
+}
+
+.lineSpacer:nth-of-type(1) h1{
+    width: 30%;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.lineSpacer:nth-of-type(2) h1 span{
+    color: #1ec0ca;
+}
+
+.col1{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media (min-width: 960px)
+{
+    .headText1{
+        max-width: 1200px;
+        padding: 36px;
+    }
+}
+
+.btnLink{
+    margin-top: 36px;
+    width: 23%;
+}
+
+.btnLink a{
+    text-decoration: none;
+}
+
+.btn1{
+    color: white;
+    background-color: #1ec0ca;
+    height: 54px;
+    text-align: center;
+    padding: 16px 0px;
+    border-radius: 3px;
+    font-weight: 600 !important;
+    font-family: Poppins !important;
+    letter-spacing: 0.1em
+}
+
+
+
+
+
+
+
+
+/**************THIRD ROW- Part 1*******************/
+
+.thirdContainer .row1{
+    background-image: url('https://kitchensinkstudios.com/wp-content/uploads/2019/07/Who-we-are-bg.jpg');
+    color:white;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover;
+}
+
+.thirdContainer .bgOverlay3{
+    background-color: rgba(37, 47, 56, 0.87);
+}
+
+.thirdContainer .row1 h2{
+    font-size: 100px;
+    color: #e81f76;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.00rem;
+    padding: 50px;
+}
+
+@media (min-width: 960px)
+{
+    .thirdContainer .row1 .row1Content{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    }
+}
+
+
+.thirdContainer .row1 p{
+    color: white;
+    margin-bottom: 0px;
+}
+
+.mainContent3-1{
+    width: 70%;
+    margin: 0 0 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.mainContent3-1 ul{
+    list-style-type: none;
+    line-height: 2rem;
+    display: inline-block;
+    padding-right: 4.7rem;
+}
+
+.mainContent3-1 i{
+    margin-right: 13.5px;
+    color: #e81f76;
+}
+
+.mainContent3-1 ul span{
+    font-weight: 400;
+}
+
+.lists{
+    width: 90%;
+    margin: 0 0 0 auto;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************THIRD ROW- Part 2*******************/
+
+
+.con3-2content{
+    width:60%;
+    margin: 55px 0 0 55px;
+    display: inline-block;
+
+}
+
+.con3img{
+    width: 30%;
+    margin-right: 0;
+    margin-left: 0;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+.con3img img{
+    width: 100%;
+    height: auto;
+    margin-top: -315px;
+}
+
+.con3-2Head{
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #1ec0ca;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************NAVBAR************/
+
+
+
+
+.logo {
+    position: fixed;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    transition: 0.5s ease;
+}
+
+
+
+.menu-icon {
+    
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+    
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+    
+}
+
+.black{
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+.toggleBtnNav{
+    color: white;
+    float: right;
+    margin-right: 30px;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.toggleBtnNav:hover{
+    cursor: pointer;
+}
+
+.logo-image{
+    max-width: 15%;
+    filter: invert(1);
+    padding: 10px 0 10px 45px;
+}
